@@ -1,0 +1,316 @@
+.backgrounDiv{
+    background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+    height: 430px;
+    width: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
+    padding-top: 90px;
+}
+.headingDiv{
+    text-align: left;
+    width: 80%;
+    margin: auto;
+}
+.aboutHeading{
+    /* color: rgb(51, 165, 203); */
+    /* color: #cf7c06; */
+     color: rgb(211, 84, 0);
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+
+.headingPara{
+    width: 55%;
+    letter-spacing: 1.5px;
+    font-size: 25px;
+    line-height: 35px;
+}
+
+.introHeading{
+    font-size: 35px;
+    letter-spacing: 1.5px;
+    font-weight: 500;
+    /* color: rgb(51, 165, 203); */
+    color: #cf7c06;   
+}
+
+.introText{
+    width: 80%;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    color: rgb(66, 65, 65);
+    margin: auto;
+    text-align: justify;
+    margin-top: -10px;
+}
+
+.introText2{
+    width: 80%;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    color: rgb(66, 65, 65);
+    margin: auto;
+    margin-top: 30px;
+    text-align: justify;
+}
+
+@media all and (max-width:1000px){
+    .backgrounDiv{
+        background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+        height: 430px;
+        width: 100%;
+        object-fit: fill;
+        box-sizing: border-box;
+        padding-top: 90px;
+    }
+    .headingDiv{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutHeading{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+    
+    .headingPara{
+        width: 60%;
+        letter-spacing: 1.5px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .introHeading{
+        font-size: 35px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .introText{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: -10px;
+    }
+    
+    .introText2{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:850px){
+    .backgrounDiv{
+        background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+        height: 430px;
+        width: 100%;
+        object-fit: fill;
+        box-sizing: border-box;
+        padding-top: 90px;
+    }
+    .headingDiv{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutHeading{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 40px;
+    }
+    
+    .headingPara{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 25px;
+        line-height: 35px;
+    }
+    
+    .introHeading{
+        font-size: 35px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .introText{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: -10px;
+    }
+    
+    .introText2{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 20px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:650px){
+    .backgrounDiv{
+        background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+        height: 300px;
+        width: 100%;
+        object-fit: fill;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .headingDiv{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutHeading{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+    
+    .headingPara{
+        width: 100%;
+        letter-spacing: 1.5px;
+        font-size: 17px;
+        line-height: 30px;
+    }
+    
+    .introHeading{
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .introText{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 13px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: -10px;
+    }
+    
+    .introText2{
+        width: 80%;
+        letter-spacing: 1.5px;
+        font-size: 13px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:350px){
+    .backgrounDiv{
+        background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+        height: 300px;
+        width: 100%;
+        object-fit: fill;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .headingDiv{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutHeading{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .headingPara{
+        width: 100%;
+        letter-spacing: 1.5px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+    
+    .introHeading{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .introText{
+        width: 90%;
+        letter-spacing: 1.5px;
+        font-size: 13px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: -10px;
+    }
+    
+    .introText2{
+        width: 90%;
+        letter-spacing: 1.5px;
+        font-size: 13px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media all and (max-width:230px){
+    .backgrounDiv{
+        background-image: url("https://www.abovethelinesecurity.com/wp-content/uploads/2016/02/about-us-background.png");
+        height: 270px;
+        width: 100%;
+        object-fit: fill;
+        box-sizing: border-box;
+        padding-top: 70px;
+    }
+    .headingDiv{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutHeading{
+        font-weight: 500;
+        letter-spacing: 1px;
+        font-size: 20px;
+    }
+    
+    .headingPara{
+        width: 100%;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    
+    .introHeading{
+        font-size: 20px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+    }
+    
+    .introText{
+        width: 90%;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: -10px;
+    }
+    
+    .introText2{
+        width: 90%;
+        letter-spacing: 1.5px;
+        font-size: 12px;
+        color: rgb(66, 65, 65);
+        margin: auto;
+        margin-top: 30px;
+    }
+}

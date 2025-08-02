@@ -1,0 +1,985 @@
+.navbar {
+  width: 100%;
+  background-color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.logoImage {
+  width: 175px;
+  height: 100%;
+}
+
+.logoImage:hover {
+  cursor: pointer;
+}
+
+.optionsDiv {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, 130px);
+  gap: 30px;
+}
+
+.option {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 130px;
+}
+
+.option:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid white;
+}
+
+.lengthDigitText {
+  color: rgb(208, 150, 3);
+  font-weight: 600;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(2, 49%);
+  gap: 4% 2%;
+  margin-bottom: 50px;
+}
+
+.resolvedSingleQueryDiv {
+  border: 1px solid green;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.resolvedSingleQueryDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.notResolvedSingleQueryDiv {
+  border: 1px solid #e11d48;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  text-align: left;
+}
+
+.notResolvedSingleQueryDiv:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.queryTextDiv {
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 18px;
+  display: flex;
+  gap: 30px;
+  align-items: start;
+}
+
+.queryDetailsText {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.queryText {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+}
+
+.reslovedButton {
+  margin: auto;
+  padding: 6px;
+  font-size: 14px;
+  color: rgb(197, 3, 3);
+  background-color: white;
+  border: 1px solid rgb(224, 1, 1);
+  border-radius: 6px;
+}
+
+.reslovedButton:hover {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.emptyDataText {
+  font-size: 30px;
+  color: purple;
+  letter-spacing: 1px;
+  margin: auto;
+  margin-left: 50%;
+  margin-top: 50px;
+  width: 100%;
+}
+
+.lengthDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  letter-spacing: 1px;
+  margin-top: 30px;
+}
+
+.lengthText {
+  font-size: 20px;
+}
+
+.queryFieldsText {
+  color: rgb(211, 84, 0);
+}
+
+.responseText {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.responseText:hover {
+  color: rgb(2, 134, 178);
+}
+
+.bottomSectionDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomSectionDivForDeleteButton {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.deleteButton {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  padding: 4px;
+  width: 70px;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 1px;
+}
+
+.deleteButton:hover {
+  background-color: black;
+  cursor: pointer;
+  border: 1px solid black;
+  color: white;
+}
+
+.confirmDeleteDiv {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  box-sizing: border-box;
+}
+
+.mainConfirmDeleteDiv {
+  width: 50%;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  background-color: white;
+  box-sizing: border-box;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  animation: slideIn 1s ease forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.topSectionDiv {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmDeleteHeading {
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.crossSymbol:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.confirmPara {
+  margin-top: -10px;
+  text-align: left;
+  letter-spacing: 1px;
+}
+
+.deletedPersonName {
+  color: red;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.deleteButtonDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
+  margin: auto;
+}
+
+.yesConfirmDeleteButton {
+  width: 90px;
+  font-size: 17px;
+  padding: 5px;
+  background-color: green;
+  border: 1px solid green;
+  border-radius: 4px;
+  color: white;
+}
+
+.yesConfirmDeleteButton:hover{
+  cursor: pointer;
+}
+
+.yesConfirmDeleteButton:active{
+  background-color: rgb(4, 197, 4);
+}
+
+.noConfirmDeleteButton {
+  width: 90px;
+  font-size: 17px;
+  padding: 5px;
+  background-color: rgb(211, 3, 3);
+  border: 1px solid rgb(211, 3, 3);
+  border-radius: 4px;
+  color: white;
+}
+
+.noConfirmDeleteButton:hover{
+  cursor: pointer;
+}
+
+.noConfirmDeleteButton:active{
+  cursor: pointer;
+  background-color: red;
+}
+
+@media all and (max-width: 1000px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 4% 2%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 18px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .emptyDataText {
+    font-size: 30px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 20px;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 45%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
+  }
+}
+
+@media all and (max-width: 915px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(5, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 49%);
+    gap: 4% 2%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 15px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .emptyDataText {
+    font-size: 30px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-left: 50%;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 20px;
+  }
+}
+
+@media all and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 15px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 4%;
+    margin-bottom: 50px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 15px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 5px;
+    font-size: 13px;
+  }
+
+  .emptyDataText {
+    font-size: 20px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+  }
+
+  .lengthText {
+    font-size: 17px;
+  }
+
+  .mainConfirmDeleteDiv {
+    width: 70%;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+    animation: slideIn 1s ease forwards;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 55%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 80px;
+    font-size: 17px;
+    padding: 5px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .deletedPersonName {
+    color: red;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .navbar {
+    width: 100%;
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+  }
+
+  .logoImage {
+    width: 175px;
+    height: 100%;
+  }
+
+  .logoImage:hover {
+    cursor: pointer;
+  }
+
+  .optionsDiv {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    grid-template-columns: repeat(2, 100px);
+    gap: 10px;
+  }
+
+  .option {
+    padding: 4px;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  .option:hover {
+    cursor: pointer;
+  }
+
+  .main {
+    width: 95%;
+    margin: auto;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    gap: 4%;
+    margin-bottom: 200px;
+  }
+
+  .resolvedSingleQueryDiv {
+    border: 1px solid green;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .resolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .notResolvedSingleQueryDiv {
+    border: 1px solid red;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    text-align: left;
+  }
+
+  .notResolvedSingleQueryDiv:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  .queryTextDiv {
+    width: 100%;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 20px;
+    align-items: start;
+  }
+
+  .queryFieldsText {
+    font-size: 14px;
+  }
+
+  .queryDetailsText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .queryText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: 70%;
+  }
+
+  .reslovedButton {
+    margin: auto;
+    padding: 4px;
+    font-size: 12px;
+  }
+
+  .emptyDataText {
+    font-size: 19px;
+    color: purple;
+    letter-spacing: 1px;
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .lengthDiv {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(1, 100%);
+    width: 80%;
+    margin: auto;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    text-align: left;
+  }
+
+  .lengthText {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .responseText {
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+
+  .mainConfirmDeleteDiv {
+    width: 70%;
+    position: fixed;
+    top: 25%;
+    left: 15%;
+    background-color: white;
+    box-sizing: border-box;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 4%;
+    border-radius: 10px;
+    animation: slideIn 1s ease forwards;
+  }
+
+  .deleteButtonDiv {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+  }
+
+  .yesConfirmDeleteButton {
+    width: 70px;
+    font-size: 15px;
+    padding: 2px;
+    background-color: green;
+    border: 1px solid green;
+    border-radius: 4px;
+    color: white;
+  }
+
+  .noConfirmDeleteButton {
+    width: 70px;
+    font-size: 15px;
+    padding: 2px;
+    background-color: rgb(211, 3, 3);
+    border: 1px solid rgb(211, 3, 3);
+    border-radius: 4px;
+    color: white;
+  }
+
+  .deletedPersonName {
+    color: red;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .confirmDeleteHeading {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: red;
+  }
+}
